@@ -1,0 +1,32 @@
+1. What is containerization?
+
+Ans: Containerization is a process of packaging an application along with its dependencies, libraries, and configuration files into a container so that it can run consistently across different environments. It helps developers build, test, and deploy applications easily without worrying about differences between systems. Docker is a popular tool used for containerization.
+
+===================================================================================================
+
+2. What is Dockerfile?
+
+Ans: A Dockerfile is a text file that contains a set of instructions to build a Docker image. It specifies the base image, working directory, application files, dependencies, and command to run the application. For example, `FROM python:3.10` selects a Python base image, while `COPY app.py .` copies the application file into the image.
+
+===================================================================================================
+
+3. What is Docker Hub?
+
+Ans: Docker Hub is a cloud-based registry where users can store, share, and download Docker images. Developers can push their images to Docker Hub and pull them onto other systems whenever required. It makes sharing applications and deploying them across different environments easier.
+
+===================================================================================================
+
+4. What is image vs container?
+
+Ans: A Docker image is a read-only template that contains the application code, dependencies, and instructions required to run an application. A container is a running or stopped instance of that image. An image is used to create containers, and multiple containers can be created from the same image. For example, `devops-project:latest` is an image, while `devops-container` is a container created from that image.
+
+===================================================================================================
+
+5. Explain project workflow.
+
+Ans: In a Docker project workflow, first we create a project folder and develop an application using Python or HTML. Next, we create a Dockerfile containing the instructions required to package the application. We build a Docker image using the `docker build` command and create a container using `docker run`. We verify the container using `docker ps` and test the application. Finally, we log in to Docker Hub, tag the image with the Docker Hub repository name, and push it using `docker push`. The image can then be pulled from Docker Hub and used on another system.
+
+Example workflow:
+
+`Application → Dockerfile → Build Image → Run Container → Test → Push Image to Docker Hub`
+
