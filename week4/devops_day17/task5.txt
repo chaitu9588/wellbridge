@@ -1,0 +1,46 @@
+1. What is deployment?
+
+Ans: Deployment is the process of making an application available for users by installing and running it on a server or cloud platform.
+
+========================================================================================================================================================================================
+
+2. What is Nginx used for?
+
+Ans: Nginx is a web server used to serve web pages, handle HTTP and HTTPS requests, act as a reverse proxy, and distribute traffic between servers.
+
+========================================================================================================================================================================================
+
+3. What is nohup?
+
+Ans: `nohup` is a Linux command used to keep a process running even after the user logs out of the terminal. It is commonly used to run applications in the background.
+
+Example:
+
+```
+nohup python3 app.py &
+```
+
+========================================================================================================================================================================================
+
+4. Why do we use Git on a server?
+
+Ans: Git is used on a server to download application code from a repository, manage different versions of the code, pull updates, and deploy the latest changes. It helps developers maintain and update applications efficiently.
+
+========================================================================================================================================================================================
+
+5. Steps to deploy an application
+
+Ans: The basic steps to deploy an application on a Linux server are:
+
+1. Connect to the server using SSH.
+2. Install required software, such as Git, Python, or Node.js.
+3. Clone the repository using `git clone`.
+4. Navigate to the project directory using `cd`.
+5. Install application dependencies required to run the application.
+6. Configure the application and environment variables.
+7. Run the application using the appropriate command.
+8. Configure Nginx to serve the application or act as a reverse proxy.
+9. Open the required ports in the server's firewall or AWS security group.
+10. Test the application using the server's public IP address or domain name.
+
+========================================================================================================================================================================================
