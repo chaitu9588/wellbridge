@@ -1,0 +1,41 @@
+1. What is cloud computing?
+
+Ans: Cloud computing is the delivery of computing services such as servers, storage, databases, networking, and software over the internet. It allows users to access resources whenever needed without purchasing and maintaining physical hardware. For example, we can create a virtual server on AWS and use it to host a website.
+
+========================================================================================================================================================================================
+
+2. What is AWS?
+
+Ans: AWS (Amazon Web Services) is a cloud computing platform provided by Amazon. It offers services such as computing, storage, databases, networking, and security. AWS allows users to create and manage resources on demand and pay according to their usage. For example, Amazon EC2 is used to create virtual servers, and Amazon S3 is used to store files and data.
+
+========================================================================================================================================================================================
+
+3. What is EC2?
+
+Ans: EC2 (Elastic Compute Cloud) is an AWS service that provides virtual servers called instances. Users can choose an operating system, instance type, storage, and network settings according to their requirements. EC2 is used for hosting websites, running applications, performing testing, and practicing DevOps tasks.
+
+========================================================================================================================================================================================
+
+4. Difference between IaaS, PaaS, and SaaS
+
+Ans: IaaS (Infrastructure as a Service), PaaS (Platform as a Service), and SaaS (Software as a Service) are three cloud computing service models.
+
+- IaaS: Provides virtual servers, storage, and networking. Example: AWS EC2.
+- PaaS: Provides a platform to develop and deploy applications without managing most of the underlying infrastructure. Example: Google App Engine.
+- SaaS: Provides ready-to-use software over the internet. Example: Gmail.
+
+In simple words, IaaS provides infrastructure, PaaS provides a platform for application development, and SaaS provides ready-to-use software.
+
+========================================================================================================================================================================================
+
+5. What is SSH?
+
+Ans: SSH (Secure Shell) is a network protocol used to securely connect to and manage a remote computer over a network. In AWS, SSH is commonly used to connect to Linux EC2 instances from a local computer using a private key (`.pem` file). It encrypts the connection to protect data exchanged between your computer and the remote server.
+
+Example:
+
+```
+ssh -i ~/.ssh/devops-kp.pem ubuntu@YOUR_PUBLIC_IP
+```
+
+========================================================================================================================================================================================
