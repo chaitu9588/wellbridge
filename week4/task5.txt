@@ -1,0 +1,27 @@
+Ans: 1. What is CI/CD deployment?
+
+CI/CD stands for Continuous Integration and Continuous Delivery or Continuous Deployment. It is a process used to automate building, testing, and deploying applications. Continuous Integration (CI) helps developers integrate and test code changes frequently, while Continuous Deployment (CD) automatically releases changes to a server when the required checks pass.
+
+======================================================================================================================
+
+Ans: 2. What is GitHub Actions used for?
+
+GitHub Actions is an automation tool provided by GitHub. It is used to automate tasks such as testing code, building applications, and deploying projects to servers. In our wellbridge project, GitHub Actions runs a workflow whenever code is pushed to the main branch and connects to the EC2 server to deploy the application.
+
+======================================================================================================================
+
+Ans: 3. Why is SSH used?
+
+SSH stands for Secure Shell. It is a secure protocol used to connect to and manage remote servers over a network. In CI/CD deployment, SSH allows GitHub Actions to connect securely to an AWS EC2 instance, execute commands, and update the application without requiring manual login.
+
+======================================================================================================================
+
+Ans: 4. What are secrets in GitHub?
+
+GitHub Secrets are encrypted values used to store sensitive information such as passwords, access tokens, and private SSH keys. They allow workflows to access credentials without directly writing them into the workflow file. In our project, HOST, USER, and SSH_KEY are configured as repository secrets so GitHub Actions can connect to the EC2 server securely.
+
+======================================================================================================================
+
+Ans: 5. What are the benefits of automation?
+
+Automation reduces manual work, saves time, minimizes human errors, and makes software deployment faster and more consistent. It helps developers deploy code frequently, improves reliability, and ensures that repetitive tasks are performed automatically. With CI/CD automation, developers can focus more on writing and improving code instead of manually deploying applications.
