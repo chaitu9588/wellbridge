@@ -1,3 +1,4 @@
+
 name: Deploy to Server
 
 on:
@@ -10,14 +11,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Connect and Deploy
-        uses: appleboy/ssh-action@v0.1.6
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }}
+          script_stop: true
+          command_timeout: 10m
           script: |
+            set -e
             cd /home/ubuntu/app
-            git pull
-            docker-compose down
-            docker-compose up -d
+            git pull origin main
+            sudo docker-compose -f week3/devops_day15/docker-compose.yml down
+            sudo docker-compose -f week3/devops_day15/docker-compose.yml up -d --build
+
