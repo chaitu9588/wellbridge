@@ -1,0 +1,42 @@
+1. What is monitoring?
+
+Ans: Monitoring is the process of continuously checking the performance, health, and availability of a system, server, or application. It helps us identify problems such as high CPU usage, low memory, or server downtime.
+
+========================================================================================================================
+
+2. What are logs?
+
+Ans: Logs are records of events and activities that happen in a system, server, or application. They help us understand what happened, identify errors, and troubleshoot problems. For example, application errors, login attempts, and system activities are recorded in logs.
+
+========================================================================================================================
+
+3. What is the top command?
+
+Ans: The `top` command in Linux is used to monitor running processes and system performance in real time. It displays information such as CPU usage, memory usage, running processes, and system load. It helps administrators identify processes that consume high system resources.
+
+Example:
+
+```
+top
+```
+
+========================================================================================================================
+
+4. How to check disk usage?
+
+Ans: In Linux, we can use the `df -h` command to check disk space usage in a human-readable format. It displays the total disk space, used space, available space, and percentage of usage. We can use the `du -sh` command to check the total size of a particular directory.
+
+Examples:
+
+```
+df -h
+du -sh /home/ubuntu
+```
+
+========================================================================================================================
+
+5. Why is monitoring important?
+
+Ans: Monitoring is important because it helps us detect problems early, improve system performance, prevent downtime, and ensure applications run smoothly. It also helps administrators identify resource usage issues and maintain system reliability and availability. In DevOps, monitoring helps teams quickly identify and resolve problems in servers and applications.
+
+========================================================================================================================
